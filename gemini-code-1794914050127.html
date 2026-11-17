@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Departments Hub | ICSII-12 Conference & Research Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nileDark: '#1e293b',
+                        nileBlue: '#0284c7',
+                        nileTeal: '#0f766e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Top Intranet Utility Bar (Technical Depts Hub Sub-portal) -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-6 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-3">
+                <span class="bg-teal-700 text-white px-2 py-0.5 rounded font-mono text-[10px] uppercase tracking-wider font-semibold">Technical Hub</span>
+                <span>Nile Sugar Intranet &gt; Technical Departments Portal &gt; ICSII-12 Conference Showcase</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span><i class="fa-solid fa-calendar-days text-teal-400 mr-1.5"></i> November 7–10, 2026 | Luxor, Egypt</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-teal-400 font-medium"><i class="fa-solid fa-shield-halved mr-1"></i> Quality, R&D & Maintenance Collaborative Portal</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navigation -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand / Logo & Hub Title -->
+            <div class="flex items-center space-x-4">
+                <div class="bg-white p-1.5 rounded-lg border border-slate-200 flex items-center justify-center shadow-xs">
+                    <img src="Picture1.jpg" alt="Nile Sugar Logo" class="h-9 w-auto object-contain">
+                </div>
+                <div>
+                    <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-tight">Technical Departments Hub</h1>
+                    <p class="text-xs text-slate-500 font-normal">Internal Knowledge Sharing & Research Repository</p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#hero-carousel" class="hover:text-teal-700 transition-colors">Home</a>
+                <a href="#overview" class="hover:text-teal-700 transition-colors">Overview</a>
+                <a href="#papers" class="hover:text-teal-700 transition-colors">Research Papers</a>
+                <a href="#gallery" class="hover:text-teal-700 transition-colors">Conference Gallery</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div>
+                <a href="#papers" class="bg-teal-800 hover:bg-teal-900 text-white text-xs sm:text-sm font-medium px-4 py-2.5 rounded-lg transition-all shadow-xs flex items-center space-x-2">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>View 3 Papers</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Image Carousel Landing Section -->
+    <section id="hero-carousel" class="relative bg-slate-900 text-white overflow-hidden border-b border-slate-800">
+        <div class="relative w-full h-[480px] sm:h-[560px] overflow-hidden bg-slate-950" id="carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-100 flex items-center justify-center">
+                <img src="WhatsApp Image 2026-11-09 at 1.26.57 PM (1).jpeg" alt="Nile Sugar Team at ICSII-12 Luxor" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                <img src="WhatsApp Image 2026-11-09 at 1.26.56 PM.jpeg" alt="Conference Session Attendees" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                <img src="WhatsApp Image 2026-11-08 at 9.51.03 AM (1).jpeg" alt="Delegation and Presentations" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                <img src="WhatsApp Image 2026-11-09 at 10.27.09 AM.jpeg" alt="Technical Discussions" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            </div>
+
+            <!-- Carousel Content Overlay -->
+            <div class="absolute inset-0 z-20 flex items-end pb-16 px-6 lg:px-12">
+                <div class="max-w-4xl">
+                    <div class="inline-flex items-center space-x-2 bg-teal-900/80 border border-teal-600 text-teal-300 px-3.5 py-1.5 rounded-md text-xs font-medium mb-4 backdrop-blur-xs">
+                        <i class="fa-solid fa-award"></i>
+                        <span>ICSII-12 Official Participation & Research Showcase</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-4 text-white drop-shadow-md">
+                        Engineering Excellence & Sustainability at ICSII-12 Luxor
+                    </h2>
+                    <p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-6 max-w-3xl drop-shadow-sm">
+                        The 12th International Conference on Sugar and Integrated Industries (ICSII-12) took place from November 7–10, 2026, in Luxor, Egypt. Explore the three pioneering research papers and technical breakthroughs shared by the Nile Sugar technical team across Quality, R&D, and Mechanical Maintenance.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#papers" class="bg-teal-700 hover:bg-teal-800 text-white font-medium px-6 py-3 rounded-lg shadow-sm transition-all flex items-center space-x-2 text-sm">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Explore 3 Research Papers</span>
+                        </a>
+                        <a href="#overview" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-medium px-6 py-3 rounded-lg backdrop-blur-xs transition-all flex items-center space-x-2 text-sm">
+                            <span>Conference Overview</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-black/40 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors backdrop-blur-xs">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-black/40 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors backdrop-blur-xs">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Carousel Dots -->
+            <div class="absolute bottom-5 right-6 z-30 flex space-x-2">
+                <button onclick="currentSlide(0)" class="carousel-dot w-3 h-3 rounded-full bg-white transition-all shadow-xs" aria-label="Slide 1"></button>
+                <button onclick="currentSlide(1)" class="carousel-dot w-3 h-3 rounded-full bg-white/50 transition-all shadow-xs" aria-label="Slide 2"></button>
+                <button onclick="currentSlide(2)" class="carousel-dot w-3 h-3 rounded-full bg-white/50 transition-all shadow-xs" aria-label="Slide 3"></button>
+                <button onclick="currentSlide(3)" class="carousel-dot w-3 h-3 rounded-full bg-white/50 transition-all shadow-xs" aria-label="Slide 4"></button>
+            </div>
+        </div>
+
+        <!-- Quick Stats Grid Below Carousel -->
+        <div class="bg-slate-900 py-8 px-6 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-slate-800/60 border border-slate-700/80 p-5 rounded-xl">
+                    <div class="text-teal-400 text-xl font-bold mb-1">Nov 7-10, 2026</div>
+                    <div class="text-xs text-slate-400">Luxor, Egypt</div>
+                </div>
+                <div class="bg-slate-800/60 border border-slate-700/80 p-5 rounded-xl">
+                    <div class="text-teal-400 text-xl font-bold mb-1">3 Papers</div>
+                    <div class="text-xs text-slate-400">Presented by Nile Sugar Team</div>
+                </div>
+                <div class="bg-slate-800/60 border border-slate-700/80 p-5 rounded-xl">
+                    <div class="text-teal-400 text-xl font-bold mb-1">EGP 290M</div>
+                    <div class="text-xs text-slate-400">Cumulative Energy Savings</div>
+                </div>
+                <div class="bg-slate-800/60 border border-slate-700/80 p-5 rounded-xl">
+                    <div class="text-teal-400 text-xl font-bold mb-1">0.045 m³</div>
+                    <div class="text-xs text-slate-400">Raw Water per Ton Beet (2025)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Overview & Highlights -->
+    <section id="overview" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-700 font-semibold text-xs tracking-wider uppercase bg-teal-50 px-3 py-1 rounded">Conference Highlights</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-3 mb-3">A Landmark Showing at ICSII-12 in Luxor</h3>
+                <p class="text-slate-600 text-base">Under company leadership supervision, Nile Sugar technical departments delivered outstanding presentations that highlighted pioneering industrial sustainability in Egypt.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <!-- Highlight Card 1 -->
+                <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-2xs hover:border-teal-600 transition-all">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-700 rounded-xl flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Water Stewardship</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        The Quality department presented groundbreaking results in industrial water conservation, dropping raw water consumption from 1.27 m³ to an extraordinary 0.045 m³ per tonne of beet through closed-loop reuse and advanced clarification.
+                    </p>
+                </div>
+
+                <!-- Highlight Card 2 -->
+                <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-2xs hover:border-teal-600 transition-all">
+                    <div class="w-12 h-12 bg-sky-50 text-sky-700 rounded-xl flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">ISO 50001 Energy Excellence</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        The R&D department shared the success of Nile Sugar's energy management framework, detailing thermal imaging, vibration analysis, and automated SharePoint tracking that delivered ~EGP 290M in savings.
+                    </p>
+                </div>
+
+                <!-- Highlight Card 3 -->
+                <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-2xs hover:border-teal-600 transition-all">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-700 rounded-xl flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Smart Pump Dynamics</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        The Mechanical Maintenance team demonstrated how mechanical re-rating and API Plan 54 double mechanical seals saved 1.12 GWh per campaign with a 3-week payback, preventing product contamination.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Papers Section with Interactive Tabs (Emphasizing Water Management as requested) -->
+    <section id="papers" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-700 font-semibold text-xs tracking-wider uppercase bg-teal-100 px-3 py-1 rounded">Technical Publications</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-3 mb-3">Nile Sugar's 3 Presented Papers at ICSII-12</h3>
+                <p class="text-slate-600 text-base">Select a research paper below to review authors, abstracts, key engineering findings, and access presentation links.</p>
+            </div>
+
+            <!-- Paper Navigation Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8" role="tablist">
+                <button onclick="switchTab(1)" id="tab-btn-1" class="tab-btn px-5 py-3 rounded-xl font-medium text-xs sm:text-sm transition-all flex items-center space-x-2 bg-teal-800 text-white shadow-xs">
+                    <i class="fa-solid fa-water"></i>
+                    <span>Paper 1: Water Management (Featured)</span>
+                </button>
+                <button onclick="switchTab(2)" id="tab-btn-2" class="tab-btn px-5 py-3 rounded-xl font-medium text-xs sm:text-sm transition-all flex items-center space-x-2 bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <span>Paper 2: Energy Management</span>
+                </button>
+                <button onclick="switchTab(3)" id="tab-btn-3" class="tab-btn px-5 py-3 rounded-xl font-medium text-xs sm:text-sm transition-all flex items-center space-x-2 bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Paper 3: Pump Dynamics</span>
+                </button>
+            </div>
+
+            <!-- Tab Content Container -->
+            <div class="bg-white rounded-2xl shadow-xs border border-slate-200 overflow-hidden">
+                
+                <!-- PAPER 1 (Emphasized with highlighted visual banner & layout) -->
+                <div id="paper-tab-1" class="paper-content p-8 lg:p-12">
+                    <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 mb-8 flex items-center space-x-3 text-teal-900">
+                        <i class="fa-solid fa-star text-teal-600 text-xl"></i>
+                        <div>
+                            <span class="font-bold text-sm block">Featured Technical Paper</span>
+                            <span class="text-xs text-teal-700">Showcasing breakthrough achievements in industrial water stewardship and closed-loop recycling.</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
+                        <div class="lg:col-span-2 space-y-6">
+                            <div class="inline-flex items-center space-x-2 bg-teal-100 text-teal-800 text-xs font-semibold px-3 py-1 rounded">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span>Department of Quality</span>
+                            </div>
+                            <h4 class="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                                Sustainable Improvement in Water Management: Nile Sugar Case Study
+                            </h4>
+                            <div class="flex flex-wrap items-center text-xs text-slate-500 gap-y-2 gap-x-6 border-y border-slate-100 py-3">
+                                <div><strong class="text-slate-800">Authors:</strong> Nile Sugar Quality Team</div>
+                                <div><strong class="text-slate-800">Affiliation:</strong> Nile Sugar Company (Quality Department)</div>
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Abstract</h5>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    Nile Sugar’s water management programme addressed rising freshwater demand and the quality of factory effluent during capacity expansion. Beginning in 2010, the plant tested chemical clarification, reused cooling water and surplus condensate, stabilized wastewater loads through buffer storage, and upgraded biological treatment. A decolorization unit, polishing pond, filtration and dedicated condensate cooling were brought into operation by 2016. These measures enabled treated water to be reused in factory operations while reducing the quantity discharged. Raw water consumption fell from 1.27 m³ per tonne of beet in 2010 to 0.045 m³ in 2025. The project also reduced pumping and treatment costs and strengthened operational resilience during interruptions to the external water supply.
+                                </p>
+                            </div>
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3"><i class="fa-solid fa-check-circle text-teal-700 mr-2"></i>Key Highlights & Results</h5>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-teal-600 text-[10px]"></i><span>Raw water cut from 1.27 to 0.045 m³ / ton beet</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-teal-600 text-[10px]"></i><span>New dedicated cooling tower for surplus condensate</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-teal-600 text-[10px]"></i><span>Decolorization & polishing pond implementation</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-teal-600 text-[10px]"></i><span>~350 tonnes CO₂e avoided per campaign</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-slate-100">
+                                <img src="Water-Lecture_Gamal-Ali_ICSII-2026.jpg" alt="Water Management Presentation Slide" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/0f766e/ffffff?text=Water+Management+Presentation'">
+                                <div class="p-3 bg-white text-center">
+                                    <span class="text-[11px] font-medium text-slate-600">Featured Lecture Visual</span>
+                                </div>
+                            </div>
+                            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between">
+                                <div class="space-y-2.5">
+                                    <button onclick="openModal('Water Management Presentation', 'Nile-Sugar_Water-Management_Gamal-Ali_ICSII-2026.pdf')" class="w-full bg-teal-800 hover:bg-teal-900 text-white font-medium py-2.5 px-4 rounded-lg text-xs transition-all flex items-center justify-center space-x-2 shadow-2xs">
+                                        <i class="fa-solid fa-eye"></i>
+                                        <span>View Presentation Slides</span>
+                                    </button>
+                                    <button onclick="openModal('Water Management Presentation', 'Nile-Sugar_Water-Management_Gamal-Ali_ICSII-2026.pdf')" class="w-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-medium py-2.5 px-4 rounded-lg text-xs transition-all flex items-center justify-center space-x-2">
+                                        <i class="fa-solid fa-download"></i>
+                                        <span>Download PDF (23 Pages)</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAPER 2 -->
+                <div id="paper-tab-2" class="paper-content p-8 lg:p-12 hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                        <div class="lg:col-span-2 space-y-6">
+                            <div class="inline-flex items-center space-x-2 bg-sky-50 text-sky-800 text-xs font-medium px-3 py-1 rounded">
+                                <i class="fa-solid fa-flask"></i>
+                                <span>Department of Research & Development (R&D)</span>
+                            </div>
+                            <h4 class="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                                Our Road to Sustainability: Energy Management in Nile Sugar Factory
+                            </h4>
+                            <div class="flex flex-wrap items-center text-xs text-slate-500 gap-y-2 gap-x-6 border-y border-slate-100 py-3">
+                                <div><strong class="text-slate-800">Authors:</strong> Nile Sugar R&D Team</div>
+                                <div><strong class="text-slate-800">Affiliation:</strong> Nile Sugar Company (R&D Department)</div>
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Abstract</h5>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    This presentation examines Nile Sugar’s approach to reducing energy intensity through a structured energy management programme aligned with ISO 50001. The work combines performance measurement, target setting and continual improvement with practical measures in maintenance and production. These include vibration analysis, in-house fan balancing, thermal inspections, automated energy reporting, tighter process-water control and heat-loss reduction. Reported results include a decline in natural gas use from 44.13 to approximately 37 m³ per tonne of beet and electricity use from 35.52 to 29.5 kWh per tonne of beet. Boiler, pulp-dryer and lime-kiln gas consumption also improved. The presentation reports cumulative savings of approximately EGP 290 million over 2020–2025.
+                                </p>
+                            </div>
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3"><i class="fa-solid fa-check-circle text-sky-700 mr-2"></i>Key Highlights & Results</h5>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-sky-600 text-[10px]"></i><span>ISO 50001 Certified Energy Management</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-sky-600 text-[10px]"></i><span>Natural gas reduced to ~37 m³ / ton beet</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-sky-600 text-[10px]"></i><span>Custom SharePoint Energy Tracking App</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-sky-600 text-[10px]"></i><span>Cumulative savings of ~EGP 290 Million</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 bg-sky-700 text-white rounded-lg flex items-center justify-center text-sm font-bold mb-4">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </div>
+                                <h5 class="font-bold text-slate-900 text-sm mb-1">Presentation Asset</h5>
+                                <p class="text-xs text-slate-500 mb-6">Complete ISO 50001 case study deck with thermal imaging & vibration graphs.</p>
+                            </div>
+                            <div class="space-y-2.5">
+                                <button onclick="openModal('Energy Management Presentation', 'Nile-Sugar_Energy-Management_ICSII-2026.pdf')" class="w-full bg-sky-700 hover:bg-sky-800 text-white font-medium py-2.5 px-4 rounded-lg text-xs transition-all flex items-center justify-center space-x-2 shadow-2xs">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>View Presentation Slides</span>
+                                </button>
+                                <button onclick="openModal('Energy Management Presentation', 'Nile-Sugar_Energy-Management_ICSII-2026.pdf')" class="w-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-medium py-2.5 px-4 rounded-lg text-xs transition-all flex items-center justify-center space-x-2">
+                                    <i class="fa-solid fa-download"></i>
+                                    <span>Download PDF (31 Pages)</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAPER 3 -->
+                <div id="paper-tab-3" class="paper-content p-8 lg:p-12 hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                        <div class="lg:col-span-2 space-y-6">
+                            <div class="inline-flex items-center space-x-2 bg-amber-50 text-amber-800 text-xs font-medium px-3 py-1 rounded">
+                                <i class="fa-solid fa-wrench"></i>
+                                <span>Department of Mechanical Maintenance</span>
+                            </div>
+                            <h4 class="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                                The Financial and Sustainable Impact of Pump Dynamics in Sugar Industry
+                            </h4>
+                            <div class="flex flex-wrap items-center text-xs text-slate-500 gap-y-2 gap-x-6 border-y border-slate-100 py-3">
+                                <div><strong class="text-slate-800">Authors:</strong> Nile Sugar Mechanical Maintenance Team</div>
+                                <div><strong class="text-slate-800">Affiliation:</strong> Nile Sugar Company (Mechanical Maintenance)</div>
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Abstract</h5>
+                                <p class="text-slate-600 leading-relaxed text-sm">
+                                    This study describes two pump improvement projects at Nile Sugar, linking hydraulic performance, reliability and operating cost. In the first, the engineering team addressed pump limitations during factory capacity expansion through speed reduction, impeller redesign and suction-piping modifications instead of full equipment replacement. The presentation reports 1.12 GWh saved per campaign, equivalent to approximately EGP 6.4 million, with an estimated three-week payback. The second project replaced single mechanical seals with double seals using API Plan 54 barrier systems to prevent water entering syrup streams. Reported benefits include reduced steam losses, improved product integrity and seal service life increasing from six to more than 24 months. Together, the cases demonstrate the value of targeted maintenance engineering.
+                                </p>
+                            </div>
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3"><i class="fa-solid fa-check-circle text-amber-700 mr-2"></i>Key Highlights & Results</h5>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-amber-600 text-[10px]"></i><span>1.12 GWh saved per campaign (~EGP 6.4M)</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-amber-600 text-[10px]"></i><span>Ultra-fast 3-week financial payback</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-amber-600 text-[10px]"></i><span>API Plan 54 double seal integration</span></li>
+                                    <li class="flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-amber-600 text-[10px]"></i><span>Seal service life increased from 6 to 24+ months</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 bg-amber-700 text-white rounded-lg flex items-center justify-center text-sm font-bold mb-4">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </div>
+                                <h5 class="font-bold text-slate-900 text-sm mb-1">Presentation Asset</h5>
+                                <p class="text-xs text-slate-500 mb-6">Complete pump re-rating & API Plan 54 technical presentation slides.</p>
+                            </div>
+                            <div class="space-y-2.5">
+                                <button onclick="openModal('Pump Operations Presentation', 'Nile-Sugar_Pump-Operations_ICSII-2026.pdf')" class="w-full bg-amber-700 hover:bg-amber-800 text-white font-medium py-2.5 px-4 rounded-lg text-xs transition-all flex items-center justify-center space-x-2 shadow-2xs">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>View Presentation Slides</span>
+                                </button>
+                                <button onclick="openModal('Pump Operations Presentation', 'Nile-Sugar_Pump-Operations_ICSII-2026.pdf')" class="w-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-medium py-2.5 px-4 rounded-lg text-xs transition-all flex items-center justify-center space-x-2">
+                                    <i class="fa-solid fa-download"></i>
+                                    <span>Download PDF (23 Pages)</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Grid -->
+    <section id="gallery" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-700 font-semibold text-xs tracking-wider uppercase bg-teal-50 px-3 py-1 rounded">Conference Gallery</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-3 mb-3">Nile Sugar Delegation at ICSII-12, Luxor</h3>
+                <p class="text-slate-600 text-base">Moments captured during lecture sessions, paper presentations, and honorary recognition ceremonies.</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-2xs flex flex-col justify-between hover:border-teal-600 transition-all">
+                    <div class="h-64 overflow-hidden relative bg-slate-100">
+                        <img src="WhatsApp Image 2026-11-09 at 10.27.08 AM (3).jpeg" alt="Delegation meeting session" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/0f766e/ffffff?text=Delegation+Session+1'">
+                        <span class="absolute bottom-3 left-3 bg-slate-900/70 backdrop-blur-xs text-white text-[11px] px-2.5 py-1 rounded font-medium"><i class="fa-solid fa-camera mr-1 text-teal-400"></i> Conference Session</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Delegate Round Table Discussions</h4>
+                        <p class="text-xs text-slate-600">Nile Sugar technical experts and delegates during session proceedings in Luxor.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-2xs flex flex-col justify-between hover:border-teal-600 transition-all">
+                    <div class="h-64 overflow-hidden relative bg-slate-100">
+                        <img src="WhatsApp Image 2026-11-09 at 10.27.09 AM (1).jpeg" alt="Delegation meeting session 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Delegation+Session+2'">
+                        <span class="absolute bottom-3 left-3 bg-slate-900/70 backdrop-blur-xs text-white text-[11px] px-2.5 py-1 rounded font-medium"><i class="fa-solid fa-camera mr-1 text-teal-400"></i> Working Session</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Interactive Technical Review</h4>
+                        <p class="text-xs text-slate-600">Engaging in technical symposium reviews and industry panel discussions.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-2xs flex flex-col justify-between hover:border-teal-600 transition-all">
+                    <div class="h-64 overflow-hidden relative bg-slate-100">
+                        <img src="WhatsApp Image 2026-11-09 at 1.26.57 PM (2).jpeg" alt="Delegation session 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/d97706/ffffff?text=Delegation+Session+3'">
+                        <span class="absolute bottom-3 left-3 bg-slate-900/70 backdrop-blur-xs text-white text-[11px] px-2.5 py-1 rounded font-medium"><i class="fa-solid fa-camera mr-1 text-teal-400"></i> Symposium Event</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Conference Hall Engagement</h4>
+                        <p class="text-xs text-slate-600">Team members participating actively in the 12th International Conference proceedings.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-2xs flex flex-col justify-between hover:border-teal-600 transition-all">
+                    <div class="h-64 overflow-hidden relative bg-slate-100">
+                        <img src="Energy-Lecture_Hossam-Mohamed_ICSII-2026.jpg" alt="Energy Lecture Session" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/0f766e/ffffff?text=Energy+Lecture'">
+                        <span class="absolute bottom-3 left-3 bg-slate-900/70 backdrop-blur-xs text-white text-[11px] px-2.5 py-1 rounded font-medium"><i class="fa-solid fa-camera mr-1 text-teal-400"></i> Energy Lecture</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Energy Management Presentation</h4>
+                        <p class="text-xs text-slate-600">Technical presentation session highlighting ISO 50001 implementation at Luxor.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-2xs flex flex-col justify-between hover:border-teal-600 transition-all">
+                    <div class="h-64 overflow-hidden relative bg-slate-100">
+                        <img src="Pump-Lecture_Beeshoy-Saeed_ICSII-2026.jpg" alt="Pump Dynamics Lecture" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Pump+Lecture'">
+                        <span class="absolute bottom-3 left-3 bg-slate-900/70 backdrop-blur-xs text-white text-[11px] px-2.5 py-1 rounded font-medium"><i class="fa-solid fa-camera mr-1 text-teal-400"></i> Pump Dynamics Lecture</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Pump Re-Rating Presentation</h4>
+                        <p class="text-xs text-slate-600">Presenting hydraulic re-rating and API Plan 54 double seal integration.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-2xs flex flex-col justify-between hover:border-teal-600 transition-all">
+                    <div class="h-64 overflow-hidden relative bg-slate-100">
+                        <img src="Nile-Sugar-Honored_ICSII-2026.jpg" alt="Honorary Recognition Ceremony" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/d97706/ffffff?text=Honorary+Recognition'">
+                        <span class="absolute bottom-3 left-3 bg-slate-900/70 backdrop-blur-xs text-white text-[11px] px-2.5 py-1 rounded font-medium"><i class="fa-solid fa-camera mr-1 text-teal-400"></i> Honorary Recognition</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1">Conference Honors & Awards</h4>
+                        <p class="text-xs text-slate-600">Nile Sugar technical team receiving recognition for sustainability contributions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-2xl rounded-2xl shadow-xl overflow-hidden flex flex-col">
+            <div class="bg-slate-900 text-white p-5 flex justify-between items-center">
+                <div>
+                    <h4 id="modal-title" class="text-sm font-bold">Presentation Document</h4>
+                    <p class="text-[11px] text-slate-400">Technical Departments Hub Document Viewer</p>
+                </div>
+                <button onclick="closeModal()" class="w-8 h-8 bg-slate-800 hover:bg-slate-700 text-white rounded-full flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+            </div>
+            <div class="p-8 text-center flex flex-col items-center justify-center space-y-3 bg-slate-50">
+                <div class="w-14 h-14 bg-teal-50 text-teal-700 rounded-2xl flex items-center justify-center text-xl font-bold shadow-2xs">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <h5 id="modal-filename" class="text-base font-bold text-slate-900">Document File</h5>
+                <p class="text-slate-500 max-w-sm text-xs">This presentation file is integrated with the Technical Departments repository for ICSII-12.</p>
+                <div class="flex space-x-3 pt-3">
+                    <a id="modal-download-link" href="#" target="_blank" class="bg-teal-700 hover:bg-teal-800 text-white font-medium px-5 py-2.5 rounded-lg text-xs transition-all flex items-center space-x-2 shadow-2xs">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Download PDF File</span>
+                    </a>
+                    <button onclick="closeModal()" class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-medium px-5 py-2.5 rounded-lg text-xs transition-all">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6 pb-6 border-b border-slate-800">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="bg-teal-700 text-white p-2 rounded-lg">
+                        <i class="fa-solid fa-seedling text-sm"></i>
+                    </div>
+                    <div>
+                        <span class="text-sm font-bold tracking-tight text-white block">Technical Departments Hub</span>
+                        <span class="text-[11px] text-slate-400">Driven by Sustainability. Powered by Efficiency.</span>
+                    </div>
+                </div>
+                <div class="flex space-x-6 text-slate-400 font-medium">
+                    <a href="#hero-carousel" class="hover:text-teal-400 transition-colors">Home</a>
+                    <a href="#overview" class="hover:text-teal-400 transition-colors">Overview</a>
+                    <a href="#papers" class="hover:text-teal-400 transition-colors">Research Papers</a>
+                    <a href="#gallery" class="hover:text-teal-400 transition-colors">Gallery</a>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-500">
+                <p>&copy; 2026 Nile Sugar Company. All rights reserved. 12th International Conference on Sugar and Integrated Industries (ICSII-12, Luxor).</p>
+                <p class="mt-2 sm:mt-0"><i class="fa-solid fa-shield-halved text-teal-600 mr-1"></i> Technical Departments Portal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript for Carousel & Modals -->
+    <script>
+        // Carousel Script
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+            dots.forEach((dot, i) => {
+                dot.style.backgroundColor = i === index ? '#ffffff' : 'rgba(255, 255, 255, 0.5)';
+            });
+            currentSlideIndex = index;
+        }
+
+        function nextSlide() {
+            let next = (currentSlideIndex + 1) % totalSlides;
+            showSlide(next);
+        }
+
+        function prevSlide() {
+            let prev = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+            showSlide(prev);
+        }
+
+        function currentSlide(index) {
+            showSlide(index);
+        }
+
+        // Auto advance carousel every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Research Paper Tabs Script
+        function switchTab(paperNum) {
+            for (let i = 1; i <= 3; i++) {
+                document.getElementById('paper-tab-' + i).classList.add('hidden');
+                let btn = document.getElementById('tab-btn-' + i);
+                btn.classList.remove('bg-teal-800', 'text-white', 'shadow-xs');
+                btn.classList.add('bg-white', 'text-slate-700', 'hover:bg-slate-200', 'border', 'border-slate-300');
+            }
+            document.getElementById('paper-tab-' + paperNum).classList.remove('hidden');
+            let activeBtn = document.getElementById('tab-btn-' + paperNum);
+            activeBtn.classList.remove('bg-white', 'text-slate-700', 'hover:bg-slate-200', 'border', 'border-slate-300');
+            activeBtn.classList.add('bg-teal-800', 'text-white', 'shadow-xs');
+        }
+
+        // Modal Script
+        function openModal(title, filename) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-filename').innerText = filename;
+            document.getElementById('modal-download-link').href = filename;
+            document.getElementById('pdf-modal').classList.remove('hidden');
+            document.getElementById('pdf-modal').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('pdf-modal').classList.remove('flex');
+            document.getElementById('pdf-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
